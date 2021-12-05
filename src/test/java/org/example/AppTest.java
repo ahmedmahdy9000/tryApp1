@@ -30,8 +30,8 @@ public class AppTest {
         driver.get("https:/test1.z2data.com/SCRisk/View/ItemsSummary?BomId=893eebc8-bf65-40b5-95ec-5a813c36f136&dType=2");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//*[@id='Username']")).sendKeys("ahmed.mahdy@z2data.com");
-        driver.findElement(By.id("Password")).sendKeys("Am@123456");
+        driver.findElement(By.xpath("//*[@id='Username']")).sendKeys("");
+        driver.findElement(By.id("Password")).sendKeys("");
         driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div[2]/form/button")).click();
         Thread.sleep(5000);
         WebElement switcher = driver.findElement(By.xpath("//div[@class='jtoggler-handle']"));
